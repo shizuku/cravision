@@ -1,0 +1,12 @@
+__pycache__
+.ipynb_checkpoints
+
+.vscode
+.idea
+
+dist
+cravision.egg-info
+
+node_modules
+.temp
+.cache
