@@ -10,7 +10,7 @@ from typing import (
     Callable
 )
 
-from utils import verify_str_arg
+from .utils import verify_str_arg
 
 
 class SVHN(VisionDataset):
@@ -60,7 +60,7 @@ class SVHN(VisionDataset):
     def __getitem__(self, index: int) -> Tuple[Any, Any]:
         img, target = self.data[index], int(self.labels[index])
 
-        # return a PIL image
+        # return a PIL image (it's np.ndarray shape: H x W x C)
         img = Image.fromarray(np.transpose(img, (1, 2, 0)))
 
         if self.transform is not None:

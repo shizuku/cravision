@@ -1,4 +1,4 @@
-from dpln.data import Dataset
+from cranet.data import Dataset
 
 from pathlib import Path
 from .utils import string_classes
